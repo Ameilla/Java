@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class H {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter d1 ");
+        int d1 = input.nextInt();
+        System.out.print("Enter the d1 notes: ");
+        int n1 = input.nextInt();
+        System.out.print("Enter d2 ");
+        int d2 = input.nextInt();
+        System.out.print("Enter the d2 notes: ");
+        int n2 = input.nextInt();
+        System.out.print("Enter d3 ");
+        int d3 = input.nextInt();
+        System.out.print("Enter the d3 notes: ");
+        int n3 = input.nextInt();
+        System.out.print("Enter d4 ");
+        int d4 = input.nextInt();
+        System.out.print("Enter the d4 notes: ");
+        int n4 = input.nextInt();
+        int total;
+        total = ((d1 * n1) + (d2 * n2) + (d3 * n3) + (d4 * n4));
+        System.out.println(total);
+    }
+}
