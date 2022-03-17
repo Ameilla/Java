@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class H
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.printf("Total users: ");
+        int total_users= input.nextInt();
+        System.out.printf("Staff users: ");
+        int staff_users=input.nextInt();
+        int non_staff=staff_users/3;
+        staff_users=staff_users+non_staff;
+        int stu_users=total_users-staff_users;
+        System.out.println("Student Users: "+stu_users);
+    }
+}
