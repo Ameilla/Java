@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class H
+{
+    public static double Powe(int x, int n)
+    {
+        double Power=Math.pow(x,n);
+        return Power;
+    }
+    public static int Add(int x,int n)
+    {
+        return x+n;
+    }
+    public static int Subtract(int x,int n)
+    {
+        return x-n;
+    }
+    public static int Multiply(int x,int n)
+    {
+        return x*n;
+    }
+
+    public static void main(String []args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("X = ");
+        int x= input.nextInt();
+        System.out.print("N = ");
+        int n=input.nextInt();
+        System.out.print("Choice : ");
+        int choice=input.nextInt();
+        switch (choice)
+        {
+            case 1:
+                System.out.println("Pow(X,N)="+Powe(x,n));
+                break;
+            case 2:
+                System.out.println("Add(X,N)="+Add(x,n));
+                break;
+            case 3:
+                System.out.println("Sub(X,N)="+Subtract(x,n));
+                break;
+            case 4:
+                System.out.println("MulX,N)="+Multiply(x,n));
+                break;
+            default:
+                System.out.println("Invalid choice...!");
+        }
+    }
+}
