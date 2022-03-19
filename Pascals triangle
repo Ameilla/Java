@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class H
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter the Number: ");
+        int n=input.nextInt();
+        int i,x,j;
+        int k=1;
+        for(i=1;i<=n;i++)
+        {
+            for(x=1;x<=n-i;x++)
+            {
+                System.out.print(" ");
+            }
+            for(j=0;j<i;j++)
+            {
+                if(j==0)
+                    k=1;
+                else
+                    k=k*(i-j)/j;
+                System.out.print(" "+k);
+            }
+            System.out.println("");
+        }
+    }
+}
