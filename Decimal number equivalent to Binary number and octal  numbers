@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class H
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.printf("Decimal Number: ");
+        int num=input.nextInt();
+        int a[]=new int[10];
+        int n,i;
+        n=num;
+        i=0;
+        while(n!=0)
+        {
+            a[i]=n%2;
+            n=n/2;
+            i++;
+        }
+        System.out.print("Binary Number=");
+        for(i=i-1;i>0;i--)
+        {
+            System.out.print(""+a[i]);
+        }
+        System.out.println("");
+        int b[]=new int[10];
+        int x,j;
+        x=num;
+        j=0;
+        while(x!=0)
+        {
+            b[j]=x%8;
+            x=x/8;
+            j++;
+        }
+        System.out.print("Octal Number=");
+        for(j=j-1;j>=0;j--)
+        {
+            System.out.print(""+b[j]);
+        }
+    }
+}
